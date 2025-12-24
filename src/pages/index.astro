@@ -1,16 +1,23 @@
 ---
-
+// Import CSS styles
+import "../styles/global.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Astro</title>
+    </head>
+    <body>
+        <main class="page-shell home">
+            <div class="page-header">
+                <h1>Astro</h1>
+                <p class="tagline">Such a jolly blog!</p>
+                <a href="/haxmas-day-11/posts" class="posts-link">See Posts</a>
+            </div>
+        </main>
+    </body>
 </html>
